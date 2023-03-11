@@ -11,7 +11,7 @@
 		
 			//convirtamos esto a un tipo string  vamos a imprimir otroNumeroint
 			
-			System.out.prinln("La conversion de 100 es igual a "+otroNumeroint);
+			System.out.println("La conversion de 100 es igual a "+otroNumeroint);
 
 			//vamos a declarar otra vaariable  le vamos a llamar otro numero str
 			/*Hay dos formas una es utlizando el metodso ineteger y otra con el metodo toString();
