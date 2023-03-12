@@ -35,7 +35,7 @@
 			/*usmos la otra forma ahora usaremos la clase String */
 			otroRealStr = String.valueOf(22.2312e2f);
 			System.out.println("forma alternativa usando un flotante: "+otroRealStr);
-
+ 
 		}
 		
 	}
