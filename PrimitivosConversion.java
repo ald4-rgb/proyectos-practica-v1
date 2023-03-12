@@ -7,7 +7,7 @@ public class PrimitivosConversion {
 		String numeroStr = "50";
 
 		// ¿Como convertimos este String a un entero? --> pues con la clase
-		// Integer.parseInjt
+		// Integer.parseInt
 
 		// entonces tenemos el entero numero int
 		int numeroInt = Integer.parseInt(numeroStr);
