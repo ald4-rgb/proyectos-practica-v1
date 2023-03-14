@@ -49,7 +49,7 @@ public class DetalleFactura {
 
         System.out.println(DetalleFactura);
 
-
+ 
     }
 
 } 
