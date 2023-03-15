@@ -3,7 +3,7 @@ java manual
 # continua  
 # ncesidad de practicar. 
 
-# -------------------------------------------------------------------------------------------------------------------
+# -----------------------------------------Donde podemos sacar mas informacion--------------------------------------------------------------------------
     Tipos de datos primitivos
     https://www.campusmvp.es/recursos/post/variables-y-tipos-de-datos-en-java-tipos-simples-clases-y-tipos-envoltorio-o-wrapper.aspx
 #
