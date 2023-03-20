@@ -94,4 +94,4 @@
 		boolean endsWith(String sufijo): Dice si la cadena termina con el sufijo indicado.
 		
 		String[] split(String patrin): Divide la cadena en varias subcadenas utilizando el patron 
-									   indicado como separador.  
+									   indicado como separador.   
