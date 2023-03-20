@@ -1,8 +1,8 @@
 public class ObjetoStringVSLiteral {
 
 
-            /*¿Cuales la diferencia entre crear una instancia con un bojeto stering con el operador new 
-                vs crear de la forma literal?*/
+    /*¿Cuales la diferencia entre crear una instancia con un bojeto stering con el operador new 
+        vs crear de la forma literal?*/
     public static void main (String [] args){
 
         //creamos una variable del tipo string
