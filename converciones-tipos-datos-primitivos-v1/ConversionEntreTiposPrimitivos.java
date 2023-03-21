@@ -7,8 +7,8 @@ public class ConversionEntreTiposPrimitivos {
         // para convertir en tipo short  solo puede ser 32767 no se puede pasar si lo convertimos a short
         //entonces para convertir los valores de los tipos de datos con menor capacidad no pasarse del rango
         int i = 32767;
-        //a un tipo short pero esto nos daria un erro entonces ¿Como converitmo? con un cast forzar la conversion 
-        //pero seguira marcando error por que don incopatible por el tamaño de lo datos primitivos osea short e int 
+        //a un tipo short pero esto nos daria un erro entonces ¿Como converitmos? con un cast forzar la conversion 
+        //pero seguira marcando error por que son incopatibles por el tamaño de lo datos primitivos osea short e int 
         // son incompatibles por el tamaño de bytes
         // podemos hacer el cast con el tipo de dato short s = (short)i ---> a qui estamos 
         //el maximo vañor de Short en decimal 32767 
