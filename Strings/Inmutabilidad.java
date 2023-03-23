@@ -57,7 +57,7 @@ public class Inmutabilidad{
         String reusltado3 =resultado.replace("a","A");
 
         // vamos a volver a imprmir  resultado nos queda igual
-        System.out.println("reusltado = " + reusltado);
+        System.out.println("reusltado = " + resultado);
         // pero a qui remplazo las a minusculas por las A mayusculas
         System.out.println("resultado = "+reusltado3);
 
