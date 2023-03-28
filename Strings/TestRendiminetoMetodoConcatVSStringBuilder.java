@@ -9,6 +9,13 @@ public class TestRendiminetoMetodoConcatVSStringBuilder {
             String a  = "a";
             String b = "b";
             String c = a;
+            //Ahora lo haremos con el la clase  StrintgBuilder creamos la instancia y le pasamos un Striin por defecto
+            StringBuilder sb  = new StringBuilder(a);
+            //entonces cmomnsmaos con el String a
+            //Entonces StirngBuilder : tal como dice el nombre nos permite crear  un String  empezar a anexar elementos  con el metodo append()
+            //vamos agragando concatendo y depsues con el metod toString() generamos el completo de unafroma mucho mas optimizada
+            // una de las caracteristicas es que el StringBuilder es mutable  a diferencia del String que inmutable  por lo tanto se puede ir modificando
+            // el StringBuilder con los elementos
 
             //la idea es impletmentar una iteración  un loop  un for  y por ejemplo concatena unas 100 veces
             // o 500 veces un contenido  un texto y ver cuanto se demora en cada una de las formas y tomar un timepor inicial
@@ -24,12 +31,21 @@ public class TestRendiminetoMetodoConcatVSStringBuilder {
             // esto es igual a decir que i++ == a i = i + 1
             // el operador ++ siginifica postincremento
                 //inicia   ;evalua; incrementa
-            for (int i = 0 ;i < 500;i++){
+            //que pasara con mil
+            for (int i = 0 ;i < 100000;i++){
                 //vamos a evaluar la concatenacion con el metodo concat(String string)
                 //entonces c va hacer igual a concat(a).concat(b);
                 //concat("\n") este salto de linea es para que podamso ver cada iteracion en un buen orden
-                //c = c.concat(a).concat(b).concat("\n"); --> ejemplo con concat lo pueddes descomanetar
-                //c =c + a + b  + "\n"; ejemplo con el operado +
+                //c = c.concat(a).concat(b).concat("\n");// --> ejemplo con concat lo pueddes descomanetar
+                //c =c + a + b  + "\n";// ejemplo con el operado +
+                // c += a + b  + "\n"; forona simplificada
+                //Realizaremos el test con StringBuilder
+                //entonce sb invocamos el metodo append concatenamos con a
+                // si nos fijamos estamos invocando los metodos de forma encadenada
+                // ¿por que? el append retonar la misma instancia el mismo objeto  o referencia del StringBuiler
+                // entonces como retorna el SringBuilder podemos volver a invocar a su metodo
+                sb.append(a).append(b).append("\n");
+
             }
 
             //vamos a tenr tambien un fin
@@ -40,6 +56,7 @@ public class TestRendiminetoMetodoConcatVSStringBuilder {
             System.out.println(fin - inicio);
 
             System.out.println("c ="+c);
+            System.out.println("sb= " + sb.toString());
 
 
 
@@ -49,6 +66,9 @@ public class TestRendiminetoMetodoConcatVSStringBuilder {
 
             /*
             * Se puede demorar 2 ms o 1 son 55 iteraciones esta concatenando 500 veces
+            *
+            * Conclucion por donde se le mire el StringBuilder es maw rapido que el metodo concat() el operador +
+            *
             * */
 
         }
