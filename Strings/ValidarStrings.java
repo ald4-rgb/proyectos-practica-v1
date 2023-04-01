@@ -47,7 +47,42 @@ public class ValidarStrings {
             // -- usando el opresador +
             // que pasa si usamso el operador +
             System.out.println("Bienveniddo al curso "+curso);// no lanza el java.lang.NullPointerException el operador + solo nos da la referencia de que es null
-            //entonces con esto ya sabemos
+            //entonces con esto ya sabemos que el metodo concat() solamente lo utiliamos cuando el String tiene una instancia nos nulll
+
+            // que pasa si definimos si es null si es trus
+            // es lo mismo que decir que esNulo es  igual a true osea es lo mismo if(esNulo){...} que if(esNulo == true){...}
+            // o incluso podriamos if(curso == null){...}
+            // lo dejaremos ejecutar todo como variables ya que es lo mismo
+            if(esNulo){
+                //si se cumple la condición le damos un valor por defecto
+               // curso = "Apigee con el profesor Chubaldo";
+
+               // ¿Qque pasa si curso es un String vacio
+                curso = ""; // existe el bojeto tieene referencia pero no tiene contenido pero no da error
+            }
+
+            // ¿como podriamso validar que un String tenga un tamaño?
+            //  entonces esvacio es igual a curso.length() el metodo length() retorna un Integet
+            // entonces con eso podemos saber si la cantidad de caracteres es igual a cero  es por que es vacio
+             boolean esvacio = curso.length() ==  0 ;
+            //esto lo podemos imprimir  siempre y cuando no sea vacio sea dsitinto  de vacio
+            // este if(esvacio == false){...} tambien se puede escribir de esta forma if(!esvacio){...}
+            // si es distinto a vacio podemso imprimir
+            // tambien podemos hacerlo de este moodo if(curso.length() ==  0){} o if(curso.length() >  0){}
+
+            if(!esvacio){
+                System.out.println(curso.toUpperCase());
+                System.out.println("Bienvenido al curso\s".concat(curso));
+                // es vacio como vemos este bloque no se ejecuta nunca de va a ejecutar
+            }
+
+        System.out.println("***************************Descomentar**************************************");
+            //entonce que pasa si ponemos el metodo toUpperCase() lo convierte a mayusculas
+            System.out.println(curso.toUpperCase());
+            // a qui lo imprimimos sin que sea mayusculas podemos concatenar incluso con el concat()
+            System.out.println("Bienvenido al curso\s".concat(curso));
+
+
 
 
             }
