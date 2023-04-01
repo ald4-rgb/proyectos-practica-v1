@@ -67,8 +67,6 @@ public class ValidarStrings {
                //  curso = " "; // existe el objeto tieene referencia pero no tiene contenido pero no da error. Puedes descomentarlo
             }
 
-
-
  /////////////////////////////////////////Validaccion su es vasio un String//////////////////////////////////////////////
 
         boolean esVacio = curso.length() ==  0 ;
@@ -130,7 +128,7 @@ public class ValidarStrings {
         //entonces con eso podemos saber si la cantidad de caracteres es igual a cero  es por que es vacio
 
       /*puedes descomentar y comentar para ver como funcionan estas validaciones
-      *
+      * Tener en cuenta qeu en java 8 no exite el metodo isBlanc() a partir de java 11
       *
       *  */
 
