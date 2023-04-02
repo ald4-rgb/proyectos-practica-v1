@@ -1,7 +1,9 @@
 java manual
+
+# Como recomendación de uso de intellegi pero puedes usdar el IDE que más te guste
 # manual para tontos esto nos ayudara a recordar conceptos basico como avanzados junto con ello trataremos de hacer una integracion 
 # continua  
-# ncesidad de practicar. 
+# necesidad de practicar. 
 
 # -----------------------------------------Donde podemos sacar mas informacion--------------------------------------------------------------------------
     Tipos de datos primitivos

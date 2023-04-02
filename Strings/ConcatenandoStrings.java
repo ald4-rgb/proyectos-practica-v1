@@ -13,7 +13,7 @@ public class ConcatenandoStrings {
             
             System.out.println(detalle);
             System.out.println("*********************************************************************");
-            //otro aspecto importante que la concatenación es cuando queremos convinar con operaciones aritmeticas con las suma
+            //otro aspecto importante de la concatenación es cuando queremos convinar con operaciones aritmeticas con las suma
 
             /*por ejemplo vamos a tenr el numero a + b */
             int numeroA = 15;
@@ -27,7 +27,7 @@ public class ConcatenandoStrings {
         //   a menos que usemos los pretnesis, entonces con los parentesis cambiamos la presedencia el orden 
         //   en que se ejecutan en que se evaluan estas operaciones  entonces primero va a sumar
         //   despues a concatenar siempre los parentesis  tienen preferencia  en la presedencia  
-        //   es importante utilizar los parentesis cuadno concatenamos con String cuando usamos operaciones aritmeticas
+        //   es importante utilizar los parentesis cuando concatenamos con String cuando usamos operaciones aritmeticas
            System.out.println("\n"+detalle+ " "+(numeroA + numeroB)); 
           //Ahora veamos al reves, entones la logica es primero de izquierda a derecha encotnces suma primero y detalle 
           // no es nuemrico pero si lo puede concatenar entonces concatena el resultado de la suma  al String
@@ -44,11 +44,11 @@ public class ConcatenandoStrings {
             // un String  con el metodo concat() --> lo que hace no es modificar  el curso  si no lo que hace es retornar
             // otro String otra instnaica  otros objeto distinto  a curso  y a profesor  retorna  otra instincia  y se la asigna 
             //a detalle entonces siempre los String son inmutables 
-            String detalle2 = curso .concat(profesor);
+            String detalle2 = curso.concat(profesor);
             //entonces vamos a imprimir 
             System.out.println(detalle2);    
-            //Y los String se oueden ir anidando
-            //por ejemplo voy aconcatenar el metodo concar en el String en el espaico 
+            //Y los String se pueden ir anidando
+            //por ejemplo voy a concatenar el metodo concar en el String en el espaico 
             String detalle3 = curso.concat(" con ".concat(profesor)); 
             
             System.out.println(detalle3);
@@ -59,9 +59,9 @@ public class ConcatenandoStrings {
 
             //Entonces esta forma de concatenar es más eficiente que usar el + 
             /*¿Por que hace hace el signo + ? --> por que en relalidad el signo + 
-             * lo qeu hace es concatenar a travez  de una clase   un objeto 
-             * se cerea una instnacia  de StringBoulder
-             * StringBoulder: nos permite unir String y concatenar 
+             * lo que hace es concatenar a travez  de una clase   un objeto 
+             * se crea una instnacia  de StringBuilder
+             * StringBuilder: nos permite unir String y concatenar 
              * entonces el + crea una instnacia de una StringBuilder y concatena y a si sucesivamente
               */
         }    
