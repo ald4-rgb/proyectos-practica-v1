@@ -1,9 +1,10 @@
 public class ValidarStrings {
 
 
-    /*En este ejercicio sabremos como vlaidar un String
-            ¿Si es una instancia  en null  si tiene buenas referencia  la variable tipo String o almenos si tiene un long
-            O si el String tiene un espacio en blanco?
+    /*
+    *En este ejercicio sabremos como vlaidar un String
+    *        ¿Si es una instancia  en null  si tiene buenas referencia  la variable tipo String o almenos si tiene un long
+    *       O si el String tiene un espacio en blanco?
     *
     *  */
     public static  void main(String [] args){
