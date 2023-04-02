@@ -12,13 +12,13 @@ public class ValidarStrings {
             String curso = null;
             //¿Como se valida esto ?
             // por ejemplo cuando la instancia de un objeto vamos a tener la instancia del tipo String
-            // pero en general para cualqueiro tipo de objeto validat por que podria ocurri un erro
+            // pero en general para cualqueiro tipo de objeto validat por que podria ocurri un error
             // por que si el objeto es null  y queremos invocar algun atributo  o metodo de este objeto nuestra app se va a quebrar el tipico
             // error nullpointerException.
             // entonces definimos un boolean
             // comparamos curso  si es igual a null
             boolean esNulo = curso == null;
-            // ya tenemos nuestra validacion sabremos si es nuelo o no
+            // ya tenemos nuestra validacion sabremos si es nulo o no
             // entonces no da true como reusltado
             System.out.println("esNulo = " + esNulo);
 
@@ -128,7 +128,7 @@ public class ValidarStrings {
         //entonces con eso podemos saber si la cantidad de caracteres es igual a cero  es por que es vacio
 
       /*puedes descomentar y comentar para ver como funcionan estas validaciones
-      * Tener en cuenta qeu en java 8 no exite el metodo isBlanc() a partir de java 11
+      * Tener en cuenta qeu en java 8 no exite el metodo isBlank() apartir de java 11
       *
       *  */
 

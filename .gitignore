@@ -1,2 +1,3 @@
-/.idea/
-!/proyectos-practica-v1.iml
+*.idea/
+proyectos-practica-v1.iml
+out
