@@ -40,9 +40,33 @@ public class MetodosStrings {
         // y retorna un caracter entonces por ejemplo 0 correcponde a la C
         // y si quiero la h seria el uno
         // y si quiero el ultimo caracter seria el 7
-        System.out.println("nombre.charAt( ) = " + nombre.charAt(0) +"\nnombre.charAt( ) = " + nombre.charAt(1)+"\nnombre.charAt( ) = " + nombre.charAt(7));
+        // ahora si quiereo la d seria
+        System.out.println("nombre.charAt(0) = " + nombre.charAt(0) +"\nnombre.charAt( ) = " + nombre.charAt(1)+"\nnombre.charAt( ) = " + nombre.charAt(7));
+        // otro metodo seria el substring() como dice su nombre obtener parte del string  fragmento del string
+        // entonces recibe un argumento desde el caracter numero 1  va a tomar 0 1 desde la h en adelante
+        // entonces siempre el primero argumento  del substring  es inlcusive  por ejemplo si quiero obetener
+        // desde la ultima
+        // y si quiero todo desde cero
+        // entonces el substring(...) --> este metodo solo toma las letras desde la posicion donde le indiquemos
+        System.out.println("nombre.substring(1) = " + nombre.substring(1).concat("\nnombre.substring(5) = ")
+                .concat(nombre.substring(5))+"\nnombre.substring(0) = "
+                + nombre.substring(0));
+        // pero tambien puede recibir dos argumentos desde al hasta
+        // desde se incluyo el hasta no se incluye no es inclusivo entonces el 3 no se incluyo
+        // vamos del 0 al 3
+        // si quiero obtener los dos ultimos
+        // entonces 6 no inclusive
+        // y si o quiero de forma dinamica como lo hariamos substring(nombre.length()-1); -- con este obtenemos el ultimo caracter
+        // y los dos ultimos pues -2 con length podemos obetnerlo ya que este metodo entra como inlcusive
+        System.out.println("nombre.substring(0,3) = " +
+                            nombre.substring(0,3).concat("\nnombre.substring(0,3) =").concat(nombre.substring(5,8))
+                            +"\nnombre.substring(nombre.length()-1) = "+nombre.substring(nombre.length()-1)
+                            +"\nnombre.substring(nombre.length()-2) = "+nombre.substring(nombre.length()-2));
+////////////////---------------Metodos String parte 2------------------------------------///////////////////////////////////////////////////////77
+
+        //crearemos otra variable
+        String trabalengua="trabalenguas";
 
 
-        
     }
 }

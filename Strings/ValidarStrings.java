@@ -109,7 +109,7 @@ public class ValidarStrings {
 
         System.out.println("esBlanco = " + esBlanco);
 
-        //etnocnes si esblanco == false if(!esBlanco) {...} recordesmo que no se ejecute lo omite ya que lo esta validando
+        //entonces si esblanco == false if(!esBlanco) {...} recordesmo que no se ejecute lo omite ya que lo esta validando
         // y  si descomentamos lo imprime deja de ser blanco
         if(!esBlanco){
             System.out.println(curso.toUpperCase());
