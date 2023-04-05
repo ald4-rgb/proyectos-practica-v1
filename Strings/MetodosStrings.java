@@ -65,11 +65,57 @@ public class MetodosStrings {
 ////////////////---------------Metodos String parte 2------------------------------------///////////////////////////////////////////////////////77
 
         //crearemos otra variable
-        String trabalengua="trabalenguas";
-
-
-
-
-
+        // cambiamos de varaible por que es una palabra mas extensa
+        String trabalenguas="trabalenguas";
+        //vamos a usar el metodo replace();
+        //y vamos a usar replace
+        // replace es para cambiar o remplazar  algun caracter por  otro entonces
+        // el priemr argumento es el caracter  que queremos remplazar  el target
+        // el segundo es el nuevo caracter  o remplazo
+        // entonces remplazaremos todos los caracteres a por un -
+        // entonces donde habia a aparece -
+        // entonces metodos como toUpperCase() toLowerCase() substring() son metodos para
+        // manipular  pero no es que modificque el string original sino que retorna
+        // una nueva instancia del string con este cambio
+        // eso inmutabilidad es inmutable  retorna una nueva instancia pero la original no cambias
+        System.out.println("trabalenguas = " + trabalenguas.replace("a","-"));
+        // es decri si imprimimos trabalenguas es una nueva instancia la que retonar
+        // la oginal no cambia
+        System.out.println("trabalenguas = " + trabalenguas);
+        // indexOf() este método permite saber si se encuentra algun caracter dentro del string
+        // y retrnna la posicion el indice de la primera incidencia es decir si encuentra el string
+        // o una frase si lo encuntra va retonar un valor la posicion por ejemplo el caracter a
+        // un char
+        // nos retorna la posicion 2, entonces retorna la primera ocurrencia en que encuentra este
+        // caracter la primera posicion pero siempre el indexOf() entrega la primera posicion
+        // con esto podemos validar si alguna palabra o caracter existe dentro de una cadena
+        System.out.println("trabalenguas.indexOf('a') = " + trabalenguas.indexOf('a'));
+        // pero a si como tambien tenemos la primera ocurrencia tambien existe la ultima ocurrencia
+        // lastIndexOf() entonces con este metodo si por ejemplo ponemos a va a buscar la ultima
+        // ocurrencia en este caso seria antepenultima letra va a retornar 10
+        System.out.println("trabalenguas.lastIndexOf('a') = " + trabalenguas.lastIndexOf('a'));
+        // y ¿Que pasa si no encuentra el caracter ? quiero buscar por h por ejemplo
+        // no existe en trabalenguas el caracter h va a retornar -1
+        // entonces  por lo tanto si queremos validar que un caracter o un String se encunetra
+        // dentro de otro String podriamos preguntar que el idex sea mayor  o iaugal que 0
+        // podriamos buscar la t entonces si es mayor o igual a cero es por que lo encontro
+        // y si es negativo es por que no lo encontro entonces recordemso que el inexOf() retorna
+        // la posicion
+        System.out.println("trabalenguas.indexOf('t') = " + trabalenguas.indexOf('t'));
+        //otro metodo parecido  contains()
+        // contains() puede recibir también una secuancia de caracteres
+        // a diferencia de indexOf() que acepta un caracter o un String pero a ca
+        // siempre es una secuncia un string esa es la diferencia y otra es que
+        // el indexOf me retrona la posicion de la primera ocurrencia
+        // y a qui nos retonra true o false un booleano
+        // ¿Lo contiene si o no?
+        // otra forma de saber si un String esta dentro de otro String
+        // pero si colocamos j por ejemplo debe de dar false
+        System.out.println("trabalenguas.contains(\"t\") = " + trabalenguas.contains("t")
+                +"\ntrabalenguas.contains(\"j\") =".concat(String.valueOf(trabalenguas.contains("j"))));
+        //otro metodo es startWith() si comienza con retonra true o false retonar una secuencia de caracteres
+        // nos dara false y si comienza con algun caracter nos dara true
+        System.out.println("trabalenguas.startsWith(\"lenguas\") = " + trabalenguas.startsWith("lenguas")
+                            +"\ntrabalenguas.startsWith(\"traba\")  = ".concat(String.valueOf(trabalenguas.startsWith("traba"))));
     }
 }
