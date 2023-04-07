@@ -117,5 +117,14 @@ public class MetodosStrings {
         // nos dara false y si comienza con algun caracter nos dara true
         System.out.println("trabalenguas.startsWith(\"lenguas\") = " + trabalenguas.startsWith("lenguas")
                             +"\ntrabalenguas.startsWith(\"traba\")  = ".concat(String.valueOf(trabalenguas.startsWith("traba"))));
+        //para finalizar otro ejemplo le vamos a agregar espacios
+        //¿Qué pasa si yo quiero quitar esos espacios? hay un método para eso el metodo trim()
+        // etnonces con trim() quitamos espacios en blanco a la derecha y izquiera
+        // este método es muy importante cuanod trabajamos con formularios por ejemplo app web también escritoroio
+        // cuando el usuario ingresa datos pero puede que ingrese mal
+        System.out.println("  trabalenguas " );
+        System.out.println("  trabalenguas ".trim() );
+
+
     }
 }
