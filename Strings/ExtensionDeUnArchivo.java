@@ -13,16 +13,21 @@ public class ExtensionDeUnArchivo {
 
     public static  void main(String [] args){
 
+        //Primer ejemplo sin automatizar
+
+
         //creamos una vairable archivo
         //la extension podria ser cualquiera de cualquier tipo de archivo
-        //la idea es que sea dinamico lo mas automatico posible 
         String archivo = "alguna_imagen.jpeg";
+        //la idea es que sea dinamico lo mas automatico posible
+        String archivo2 = "alguna_imagen.jpg";
         //lo podriamos manejar con idexOf() del caracter o del string punto
-        int i = archivo.indexOf(".");
+        int i = archivo2.indexOf(".");
         //Y si tuviermos uno con 2 putonos indexOf("."); ya no funcionaria usariamos lastIndexOf(".");
         // es mejor usar este emtodo por que podemos indicar a partir de la ultima ocurrencia
-        String archivo2 = "vacaciones.imagen.jpeg";
-        int j = archivo2.lastIndexOf(".");
+        // una mejor optimizacion
+        String archivo3 = "vacaciones.imagen.jpeg";
+        int j = archivo3.lastIndexOf(".");
         ///vamos a imprimir la cantidad de caracters con el length();
         System.out.println("archivo.length() = " + archivo.length());
         //podriamos tomar los ultimos 4 carcteres pero seria ded forma estatica
@@ -38,10 +43,9 @@ public class ExtensionDeUnArchivo {
         // archivo.substring(i +1 ) --> podemos automatizar con mas uno solo incrementamos uno al caracter
         // int i = archivo.indexOf("."); en este caso el . parte como 0 de cero a una y con mas uno podemos incrementar dntreo del rango
         // .jpeg del 0 -4
-        System.out.println("archivo.substring(i + 1) = " + archivo.substring(i +1 ));
+        System.out.println("archivo2.substring(i + 1) = " + archivo2.substring(i +1 ));
         //y a qui desmotraremos que es mejor usar lastIndexof() que indexOf a partir de caracters
-
-        System.out.println( "nombre origianl "+archivo2+"\narchivo2.substring(j +1) = " + archivo2.substring(j +1));
+        System.out.println( "nombre origianl "+archivo3+"\narchivo3.substring(j +1) = " + archivo3.substring(j +1));
 
     }
 }
