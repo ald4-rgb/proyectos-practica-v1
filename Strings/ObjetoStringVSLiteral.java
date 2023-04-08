@@ -20,7 +20,7 @@ public class ObjetoStringVSLiteral {
         //pero como son objetos y en java todo objeto de nuestro ecosistema  nuestra aplivacion de java son distintos unicos
         // y cada uno tiene su propio identificador
 
-        //Apsear de que curso y curso2 comparten  el mismo valor ambos tienen el mismo texto Cruso de Apigee pero sin duda son
+        //Apeear de que curso y curso2 comparten  el mismo valor ambos tienen el mismo texto Cruso de Apigee pero sin duda son
         // objetos completamente distintos  por lo tanto  si queremos comparar  por ejemplo boolean
         boolean esIgual = curso == curso2;
         //¿Cual sera el resultado? nos dara false por que son dos instancias diferentes a pesar de que tiene el mismo valor
