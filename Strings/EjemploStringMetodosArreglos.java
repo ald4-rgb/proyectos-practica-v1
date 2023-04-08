@@ -1,130 +1,102 @@
 public class EjemploStringMetodosArreglos {
 
-    /*La idea de este ejercicio es ver cada metodo de la clase String
-    *
-    * 1. ¿Qué podemos hacer con esto ?
-    *       si es para validar para convertir  manipular el String
+    /**************************************************************
+    *La idea de este ejercicio es convertir Stings en arreglos    *
+    *   Arreglos con Strings                                      *
+    *                                                             *
+    * *************************************************************
     * */
 
-    public static void main(String [] args){
-        //vamos a esperar con algo simple con una varaibel de tipo String
+    public static void main(String [] args) {
 
-        String nombre = "Chubaldo";
+        //El objetivo es convertir trabalenguas en un arreglo
+        String trabalenguas = "trabalenguas";
+        //vamos a comprobar cuantos caracteres tiene la palabra trabalenguas
+        System.out.println("trabalenguas.length() = " + trabalenguas.length());
 
-        //vamos a empezar con el mas simple length() para sabe la longitud de la cadena cuantos aracteres tiene
-        System.out.println("nombre.length() = " + nombre.length());// nombre.length() => 8 caracteres importante cada caracter  forman un String  por lo tanto un String forma una secuencia de caracteres
+        //entonces usamos el metodo toCharArray() --> lo  que hace este método eas converitr nuestro String en un arreglo de caracteres
+        System.out.println("trabalenguas.toCharArray() = " + trabalenguas.toCharArray());
+        //¿Que pasa si imprmimos esto? en realidad lo que imprime es el identificador el hahs del objeto [C@5caf905d
+        // todo objeto en java es una instancia una referencia entonces la unica forma de mostrar los elementos
+        //es mediante una itearación por ejemplo usando un for o un while
+        // podriamos implementar el for para mostrar cada caracter de este String
+        // lo primero es crear una variable del tipo char[] con corchetes
+        // toCharArray(); retorna una char[] un arreglo del tipo char
+        char[] arreglo = trabalenguas.toCharArray();
+        //recordemos que para un for es inicializar el contador y en cada iteracion este se va ir  incrementando en uno y evaludando si el contador es
+        // mayor a cierta cantidad de la iteracion
+        //for (int i = 0; i < arreglo.length ; i++){System.out.println(arreglo[i]);}//descomentar si lo quieres optimizado
+        // declaramos otra vairable para obtener la cantidad de elementos
+        // un int largo y un atributo arreblo.lenth diferencia de length()
+        // length --> retonar la cantidad de elementos
+        // si nos fijamos la cntidad de elementos del arreglo debiera ser igual a la cantidad de elementos del string
+        int largo = arreglo.length;
+        //vamos a imprmir el largo
+        System.out.println("largo =" + largo);
+        //inicializar el contador en cero
+        // evaluar una experesión booleana  mientrar i sea menor qeu largo que la cantidad de elementos
+        // iteramos
+        for (int i = 0; i < largo; i = i + 1) {
+            //vamos a imprimir cada caracter
+            // no nos interesa imprimir el contador
+            // el caracter es un elemento del arreglo
+            // cada elemento esta dentro de una posición
+            //    System.out.println( " arreglo = " + arreglo[i]); // si deseas descomentar
+            //imprimir en horizontal lo transformamos a caracteres a travez de un arreglo
+            System.out.print(arreglo[i]);
+        }
+        //entonces usamos el metodo split() --> lo  que hace este método eas converitr nuestro String en un arreglo de caracteres
+        System.out.println("trabalenguas = " + trabalenguas.split("a"));
 
-        //¿Como convertir por ejemplo a Mayuscula? con toUpperCasse();
-        System.out.println("nombre.toUpperCase() = " + nombre.toUpperCase());
-        //pero tambien podemos convertir en minusculas nombre.toLowerCase()
-        System.out.println("nombre.toLowerCase() = " + nombre.toLowerCase());
+        //este arreglo es del tipo String por que del tipo String por que un elmento puede tener más de un caracter
+        // la palabra a es el separador es el patrón el separador tr dos caracteres el metodo split(); usa expresiones regulares
 
-        //¿Como comparar un String a nivel de valor no de instnacia? con equals("Chubaldo")
-        System.out.println("nombre.equals(\"Chubaldo\") = " + nombre.equals("Chubaldo"));
-        //vamos a probar si lo cambio ya que es distinto Chubaldo con mayusqula que con minuscula
-        //recordemos que java es sencible a minusculas y mayusculas
-        System.out.println("nombre.equals(\"chubaldo\") = " + nombre.equals("chubaldo"));
-        //¿pero que pasa con? equalsIgnoreCase() ignora la mayusucla o minuscula
-        System.out.println("nombre.equalsIgnoreCase(\"chubaldo\") = " + nombre.equalsIgnoreCase("chubaldo"));
-        //otro metodo parecido al equals para comparar  caracteres comapreTo("...."); el oreden de este metodo es lexico grafico que esta basado en orden
-        // sobre el valor de la tabla unicode en otras palabras realiza comparacion sobre el orden numerico  de cada codigo  que esta en la tabla unicode
-        // va comparando estos caracteres y los va ordenando y a esto se le llama orden lexico grafico por ejemplo chubaldo compareTO("ubaldo") si el valor
-        // da cero son identicos .
-        System.out.println("nombre.compareTo(\"Chubaldo\") = " + nombre.compareTo("Chubaldo"));
-        //vamos a comparar con otro nombre
-        //como vemos asigna un ordenamiento deacurdo a la tabla unicode lo va ordenando segun un entero
-        // recordemos que compareTo("...") va a tener siempre tendra int esta basado en los valores de cada caracter en la tabla unicode
-        System.out.println("nombre.compareTo(\"Ubaldo\") = " + nombre.compareTo("Ubaldo"));
-        //otro metodo el charAt() nos permite convertir un String en caracteres
-        // podemos tener un caracter en particular lo que recibe este emtodo es un valor entero en el metodo  un integer
-        // y retorna un caracter entonces por ejemplo 0 correcponde a la C
-        // y si quiero la h seria el uno
-        // y si quiero el ultimo caracter seria el 7
-        // ahora si quiereo la d seria
-        System.out.println("nombre.charAt(0) = " + nombre.charAt(0) +"\nnombre.charAt( ) = " + nombre.charAt(1)+"\nnombre.charAt( ) = " + nombre.charAt(7));
-        // otro metodo seria el substring() como dice su nombre obtener parte del string  fragmento del string
-        // entonces recibe un argumento desde el caracter numero 1  va a tomar 0 1 desde la h en adelante
-        // entonces siempre el primero argumento  del substring  es inlcusive  por ejemplo si quiero obetener
-        // desde la ultima
-        // y si quiero todo desde cero
-        // entonces el substring(...) --> este metodo solo toma las letras desde la posicion donde le indiquemos
-        System.out.println("nombre.substring(1) = " + nombre.substring(1).concat("\nnombre.substring(5) = ")
-                .concat(nombre.substring(5))+"\nnombre.substring(0) = "
-                + nombre.substring(0));
-        // pero tambien puede recibir dos argumentos desde al hasta
-        // desde se incluyo el hasta no se incluye no es inclusivo entonces el 3 no se incluyo
-        // vamos del 0 al 3
-        // si quiero obtener los dos ultimos
-        // entonces 6 no inclusive
-        // y si o quiero de forma dinamica como lo hariamos substring(nombre.length()-1); -- con este obtenemos el ultimo caracter
-        // y los dos ultimos pues -2 con length podemos obetnerlo ya que este metodo entra como inlcusive
-        System.out.println("nombre.substring(0,3) = " +
-                            nombre.substring(0,3).concat("\nnombre.substring(0,3) =").concat(nombre.substring(5,8))
-                            +"\nnombre.substring(nombre.length()-1) = "+nombre.substring(nombre.length()-1)
-                            +"\nnombre.substring(nombre.length()-2) = "+nombre.substring(nombre.length()-2));
-////////////////---------------Metodos String parte 2------------------------------------///////////////////////////////////////////////////////77
+        String[] arreglo2 = trabalenguas.split("a");
+        // la longitud
+        int longitud = arreglo2.length;
+        // y vamos a tener el for  mientras j sea menor a la longitud
+        // entonces iteramos
+        for (int j = 0; j < longitud; j++) {
 
-        //crearemos otra variable
-        // cambiamos de varaible por que es una palabra mas extensa
-        String trabalenguas="trabalenguas";
-        //vamos a usar el metodo replace();
-        //y vamos a usar replace
-        // replace es para cambiar o remplazar  algun caracter por  otro entonces
-        // el priemr argumento es el caracter  que queremos remplazar  el target
-        // el segundo es el nuevo caracter  o remplazo
-        // entonces remplazaremos todos los caracteres a por un -
-        // entonces donde habia a aparece -
-        // entonces metodos como toUpperCase() toLowerCase() substring() son metodos para
-        // manipular  pero no es que modificque el string original sino que retorna
-        // una nueva instancia del string con este cambio
-        // eso inmutabilidad es inmutable  retorna una nueva instancia pero la original no cambias
-        System.out.println("trabalenguas = " + trabalenguas.replace("a","-"));
-        // es decri si imprimimos trabalenguas es una nueva instancia la que retonar
-        // la oginal no cambia
-        System.out.println("trabalenguas = " + trabalenguas);
-        // indexOf() este método permite saber si se encuentra algun caracter dentro del string
-        // y retrnna la posicion el indice de la primera incidencia es decir si encuentra el string
-        // o una frase si lo encuntra va retonar un valor la posicion por ejemplo el caracter a
-        // un char
-        // nos retorna la posicion 2, entonces retorna la primera ocurrencia en que encuentra este
-        // caracter la primera posicion pero siempre el indexOf() entrega la primera posicion
-        // con esto podemos validar si alguna palabra o caracter existe dentro de una cadena
-        System.out.println("trabalenguas.indexOf('a') = " + trabalenguas.indexOf('a'));
-        // pero a si como tambien tenemos la primera ocurrencia tambien existe la ultima ocurrencia
-        // lastIndexOf() entonces con este metodo si por ejemplo ponemos a va a buscar la ultima
-        // ocurrencia en este caso seria antepenultima letra va a retornar 10
-        System.out.println("trabalenguas.lastIndexOf('a') = " + trabalenguas.lastIndexOf('a'));
-        // y ¿Que pasa si no encuentra el caracter ? quiero buscar por h por ejemplo
-        // no existe en trabalenguas el caracter h va a retornar -1
-        // entonces  por lo tanto si queremos validar que un caracter o un String se encunetra
-        // dentro de otro String podriamos preguntar que el idex sea mayor  o iaugal que 0
-        // podriamos buscar la t entonces si es mayor o igual a cero es por que lo encontro
-        // y si es negativo es por que no lo encontro entonces recordemso que el inexOf() retorna
-        // la posicion
-        System.out.println("trabalenguas.indexOf('t') = " + trabalenguas.indexOf('t'));
-        //otro metodo parecido  contains()
-        // contains() puede recibir también una secuancia de caracteres
-        // a diferencia de indexOf() que acepta un caracter o un String pero a ca
-        // siempre es una secuncia un string esa es la diferencia y otra es que
-        // el indexOf me retrona la posicion de la primera ocurrencia
-        // y a qui nos retonra true o false un booleano
-        // ¿Lo contiene si o no?
-        // otra forma de saber si un String esta dentro de otro String
-        // pero si colocamos j por ejemplo debe de dar false
-        System.out.println("trabalenguas.contains(\"t\") = " + trabalenguas.contains("t")
-                +"\ntrabalenguas.contains(\"j\") =".concat(String.valueOf(trabalenguas.contains("j"))));
-        //otro metodo es startWith() si comienza con retonra true o false retonar una secuencia de caracteres
-        // nos dara false y si comienza con algun caracter nos dara true
-        System.out.println("trabalenguas.startsWith(\"lenguas\") = " + trabalenguas.startsWith("lenguas")
-                            +"\ntrabalenguas.startsWith(\"traba\")  = ".concat(String.valueOf(trabalenguas.startsWith("traba"))));
-        //para finalizar otro ejemplo le vamos a agregar espacios
-        //¿Qué pasa si yo quiero quitar esos espacios? hay un método para eso el metodo trim()
-        // etnonces con trim() quitamos espacios en blanco a la derecha y izquiera
-        // este método es muy importante cuanod trabajamos con formularios por ejemplo app web también escritoroio
-        // cuando el usuario ingresa datos pero puede que ingrese malx
-        System.out.println("  trabalenguas " );
-        System.out.println("  trabalenguas ".trim() );
+            //imprmimos
+            // un arreglo conformado por trblengus donde  a es el separador
+            // separado con letras y las convierte como elementos de un arreglo
+            System.out.print(arreglo2[j]);
+        }
+        System.out.println();
+        //y esto podria ser bastante util con
+        // ahora el separador va hacer el punto
+        // vamos a convertir un arreglo a partir del nombre de archivo
+        // que contenga 3 elementos algun elemento va hacer opdf
+        String archivo = "alguna_imagen.pdf";
+        //  archivo.split("."); con un patron
+        //  el punto es una plabra clave para las expresiones regulares
+        //  pero si la podemos utilizar si la escabas con dos backslash
+        // y no el punto que utiliza la expresion regular archivo.split("\\.") si quitamos eso
+        // el doble backslash '\\' no lo toma
+        // String [] archivoArray = archivo.split("\\."); //descomenta si quieres ver que pasa si no respetamos la expresion regular
+        String[] archivoArray = archivo.split("\\."); // expresion resultar recrodar siempre escapar '\\.' /\b
 
+        //vamos a reciclar la variable longitud no afecta al resultado anteroir
+        // recordemos que empezamos por el punto por eso son 2 el resultado empezamos en 0
+        longitud = archivoArray.length;
+
+        System.out.println("longitud = " + longitud);
+        // y ahora si podemos iterar
+        for (int k = 0; k < longitud; k++) {
+
+            System.out.print(archivoArray[k]);
+        }
+        // imprmmamos la extension del archivo entonces es archivoArray[longitud - 1] al archivo partimos desde el punto
+        // matematicamnete la longitud cuanta desde 2 entonces es 2 - 1 y vamos recorriendo todo desde fdp hasta el cero
+        // longitud - 1
+        System.out.println("\nextension = " + archivoArray[longitud - 1 ]);
+        
+        /*Como nota
+        *
+        * length() es metodo que se encuentra dentro de la clase String
+        * y length es un atributo que se encuentra en un arreglo viene como atributo
+        * */
 
     }
 }
