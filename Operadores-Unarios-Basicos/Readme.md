@@ -48,5 +48,45 @@ unarios,incrementales, ternarios, combinados, de bit , de instancia
   - Se pueden colocar tanto antes como después la expresión que deseemos 
     modificar pero sólo devuelven el valor modificado si están  delante.
 
+# operador ternario o condicional
+
+ - El operador ternario es una versión abreviada de la sentencia if-else.
+ - Tiene tres operandos y de ahi el nombre ternario:
+
+   (condición)?valor1:valor2
+ 
+ - Si la condición se cumple devuelve el primer valor y, en caso contrario, el segundo.
+ - El siguiente ejemplo asignara la variable 'a' un 2
+ - 
+    
+    int a = 2 > 3 ?1:2;
+
+# Operadores Relacionales
+
+ - Se Utilizan para comprobar relaiones de igualdad, mayor que, menor que.
+ - Devuelven un resultado boobleano después de la comparación, ture si la 
+   comparación fue exitosa y false en caso contrario
+ - Se usan ampliamente en las sentencias if/else, asi como en bucles
+    
+    Operador   Utulización  Resultado
+   - >          a >b        Verdadero si a es mayor que b
+   - >=         a >=        Verdadero si a es mayor o igual que b
+   - <          a < b       Verdadero si a es menor que b
+   - <=         a <=b       Verdadero si a es menor que o igual a b 
+   - ==         a == b      Verdadero si a es igual a b
+   - !=         a !=        Verdadero si a es distinto de b
+
+# Operadores Lógicos
+
+   - Los operadores lógicos permiten evaluar expresiones lógicos y trabajan
+     con operadores booleanos
+     - Realizan las operaciones lógicas de conjunción(AND), disyunción (QR) y negación(NOT)
+
+       Operador    Operador    Utilización      Resultado           
+        AND           &&       A &&  B          Verdadero cuando A y B son verdaderos, Evaluación condicional
+        Or            ||       A ||  B          Verdadero cuando A o B son verdaderos. Evaluación condicional
+        Not           !        !A               Verdadero si A es falso 
+        And           &        A & B            Verdadero cuando A y B son verdaderos. Siempre evalúa ambos operandos   
+        Or            |        A | B            Verdadero cuando A o B son verdaderos. Siempre evalúa ambos operandos  
 
 
