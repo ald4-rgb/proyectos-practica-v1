@@ -68,13 +68,7 @@ unarios,incrementales, ternarios, combinados, de bit , de instancia
    comparación fue exitosa y false en caso contrario
  - Se usan ampliamente en las sentencias if/else, asi como en bucles
     
-    Operador   Utulización  Resultado
-   - >          a >b        Verdadero si a es mayor que b
-   - >=         a >=        Verdadero si a es mayor o igual que b
-   - <          a < b       Verdadero si a es menor que b
-   - <=         a <=b       Verdadero si a es menor que o igual a b 
-   - ==         a == b      Verdadero si a es igual a b
-   - !=         a !=        Verdadero si a es distinto de b
+   ![img_4.png](img_4.png)
 
 # Operadores Lógicos
 
@@ -82,11 +76,13 @@ unarios,incrementales, ternarios, combinados, de bit , de instancia
      con operadores booleanos
      - Realizan las operaciones lógicas de conjunción(AND), disyunción (QR) y negación(NOT)
 
-       Operador    Operador    Utilización      Resultado           
-        AND           &&       A &&  B          Verdadero cuando A y B son verdaderos, Evaluación condicional
-        Or            ||       A ||  B          Verdadero cuando A o B son verdaderos. Evaluación condicional
-        Not           !        !A               Verdadero si A es falso 
-        And           &        A & B            Verdadero cuando A y B son verdaderos. Siempre evalúa ambos operandos   
-        Or            |        A | B            Verdadero cuando A o B son verdaderos. Siempre evalúa ambos operandos  
+       ![img_3.png](img_3.png)
 
+# Tabla de vardad  operadores lógicos
 
+        ![img_5.png](img_5.png)
+
+#  precedencia de los operadores 
+    
+        ![img.png](img.png)
+    
