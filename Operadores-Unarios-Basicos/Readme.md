@@ -80,10 +80,10 @@ unarios,incrementales, ternarios, combinados, de bit , de instancia
 
 # Tabla de vardad  operadores lógicos
 
-        ![img_6.png](img_6.png)
+   ![img_6.png](img_6.png)
 
 #  precedencia de los operadores 
-        
-        ![img_7.png](img_7.png)
+
+   ![img_7.png](img_7.png)
         
     
