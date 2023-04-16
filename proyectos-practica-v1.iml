@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Strings" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/converciones-tipos-datos-primitivos-v1" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ejericios-practicos-una-sola-calse-v1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Operadores-Basicos" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
