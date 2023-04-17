@@ -13,7 +13,7 @@ public class TestRendiminetoMetodoConcatVSStringBuilder {
             StringBuilder sb  = new StringBuilder(a);
             //entonces cmomnsmaos con el String a
             //Entonces StirngBuilder : tal como dice el nombre nos permite crear  un String  empezar a anexar elementos  con el metodo append()
-            //vamos agragando concatendo y depsues con el metod toString() generamos el completo de unafroma mucho mas optimizada
+            //vamos agragando concatendo y depsues con el metod toString() generamos el completo de una forma mucho mas optimizada
             // una de las caracteristicas es que el StringBuilder es mutable  a diferencia del String que inmutable  por lo tanto se puede ir modificando
             // el StringBuilder con los elementos
 
