@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 public class OperadoresAritmeticos {
 
     public static void main(String[] args) {
@@ -71,8 +73,39 @@ public class OperadoresAritmeticos {
         // por que no aparece el 1.6
         // lavarialbe divide2  maneja decimales pero la i & la j no
         // entonces seria el i & j convertirlos a tipo flotante
+        // usamos float pero tambien puede ser double divide = (double) i/(double)j;
         float divide2 = (float) i/(float)j;// float divide2 = (float)divide; //puedes descomentar para probar es simolar
         System.out.println("div2 = " + divide2);
+
+////////////////////////////Ahora veremos el resto o mejor conocido ccomo modulo ///////////////////////////////////////////////////////////
+
+        // por ejemplo i
+        // que significa i dividido entre j da un valoer entereo entero decimal
+        // que es el residuo de la divicion
+        int modulo = i  % j;
+        System.out.println("modulo = " + modulo);
+        //otro ejemplo es 19 % 5
+        modulo = 19 % 5;
+        System.out.println("modulo = " + modulo);
+///////////////////////////////////////Otro ejemplo usando JOPTIONPNANE/////////////////////////////////
+
+        // por ejemplo numero y usamos la clase JOptionPane para obtener un nuemro del usuario
+        // hay que convertirlo en inteer ya que solo acepta parametro String
+        int numero = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un numero "));
+
+        // y a qui podemos preguntar if  si numero modulo 2  es igual  a 0 es por que el nuemro es par
+        if(numero % 2 == 0){
+            System.out.println("numero es par = " + numero);
+        }// sino  entonces es impor
+        else{
+            System.out.println("numero es impar= " + numero);
+        }
+/*
+*************************************************************************
+* Este fue un pequeño calculo con el modulo usando el if para validar
+* si es divicible por dos y no sobra nada  es par si sobra algo es impar.
+* ***********************************************************************
+* */
 
 
 
