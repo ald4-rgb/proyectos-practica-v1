@@ -66,7 +66,13 @@ public class OperadorAsignacion {
         //entonces ahora vamos a imprimir
         // va hacer todo el String con la concatencaion
         System.out.println("sqlString = " + sqlString);
-
+/*
+*
+* Entoncesesta forma nos permita generar nuestras con sultas sql de forma dinamica
+* utilizando if si el parametro  nombre del usuario viene como parametro pero a si como tenemos
+* el nombre podriamos tener muchos parametros para el nombre apellido email  si esta activo o no
+* todo  a travez del operador podriamos preguntar if si los parametros vienen en la peticion de la busqueda
+* */
 
     }
 
