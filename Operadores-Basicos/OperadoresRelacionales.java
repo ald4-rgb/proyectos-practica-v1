@@ -29,7 +29,7 @@ public class OperadoresRelacionales {
         //otra varaible del tipo float 127e-7f que sea exponente
         float k = 127e-7f;
         // del tipo double l
-        double l = 2.14e3;
+        double l = 2.1413e3;
         //de momento para que sea distinto o reales vamos a tener un boolean
         boolean m = false;
 
@@ -71,6 +71,24 @@ public class OperadoresRelacionales {
         //veamos otros mayor que si i es mayor por ejemplo  que j
         boolean b6 = i > j;
         System.out.println("b6 = " + b6);
+        //veamos otros mayor que si i es menor por ejemplo  que j
+        boolean b7 = i < j;
+        System.out.println("b7 = " + b7);
+        // si l es mayor o igual  que k
+        boolean b8 = (l >=k);
+        System.out.println("b8 = " + b8);
+        // si l es menor o igual  que k
+        boolean b9 = l <=k;
+        System.out.println("b9 = " + b9);
+
+        //y para finalizar en todos estos ejemplos hay una mezcla y combinació de operadores
+        // tenemos el operador de asignacion el =  asigna un valor booleano de una comparacion
+        // == con el igual igual verficamos las relaciones de igualdad podemos usar cualquiera
+        // boolean b10 = i == j;
+        //entonces es importante la presedencia de los operadores  vs los operador de asignación;
+        // y para poder entender mejor y no confundir podemos poenrle parentesis  por presedencia
+        // primero evalua los opereadores y luego los operadores de asignación
+
 
     }
 
