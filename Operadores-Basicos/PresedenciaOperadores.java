@@ -1,4 +1,4 @@
-public class PresedenciaOPeradores {
+public class PresedenciaOperadores {
 
     /*
     * La precedencia de los operadores era de
@@ -55,5 +55,21 @@ public class PresedenciaOPeradores {
         boolean b8 = (true || true) && false;
         //como resultado nos da un false por la presedencia primero evalua el AND
         System.out.println("b8 = " + b8);
+        // otro ejemplo de la presedencia vamos a
+        // tener un true con un OR
+        // un false AND flase
+        // otro false con un OR
+        boolean b9 = true || false && false || false;
+        // recrodemos que el que manda es el AND con el que inicia la operacion
+        // este nos da un true por que despues evalua OR el resultado es true
+        System.out.println("b9 = " + b9);
+        // si valuamos ocn parentesis nos daria un false si lo evaluamos a si
+        boolean b10 = ((true || false) && false) || false;
+        // el and tiene mayor priorirdad
+        System.out.println("b10 = " + b10);
+
+        /*Usar parentesis es muchos mas claro y explicito*/
+
+
     }
 }
