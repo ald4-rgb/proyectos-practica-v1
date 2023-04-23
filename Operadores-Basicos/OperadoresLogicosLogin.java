@@ -15,6 +15,9 @@ public class OperadoresLogicosLogin {
         //primero defirnir un par de variables del tipo String
         String username= "Chubaldo";
         String password= "12345";
+        //si queremos agregar otri usuario
+        String username2= "admin";
+        String password2= "admin123";
 
         //vamos a usar la clase Scanner para poder capturar estos datos del usuario
         // entonces la idea es si el username y el password es Chubaldo y el passowrod es 12345
@@ -50,11 +53,32 @@ public class OperadoresLogicosLogin {
         // del tipo String en este caso esto seria equivalente al == por lo tanto equals() seria
         // una especie de operador realcional pero a nivel de objetos de instancia
         // si username.equals(usuario) &&
-        if(username.equals(usuario) && password.equals(password)){
-            System.out.println(" bienvenido a la peda ");
+        //entonces tenemos operadores que se estan evaluando con operadores relacionales
+        //agregamos or || con que una condicion sea true
+        if(username.equals(usuario) && password.equals(contraseña) || (username2.equals(usuario) && password2.equals(contraseña)) ){
+            // si esta autneticado lo dejamos en true
+            esAutenticado = true;
+            //y si no no esta autenticdo el else no es necesario
         }else{
-            System.out.println("ijole no puedes entrar mano *_* = ");
+           //si quisieramos un mensa donde digamo que el usuario o password no eiste
+            System.out.println("usuairo no encontrado password equivocado");
         }
+        //ahora con otro ir si autenticado es true
+        //si es de forma automatica se
+        if(esAutenticado ){
+              //ejecuta este bloque
+              //codigo privado que requiere autenticacion
+              //concatenamos el usarname u
+            System.out.println("Bienvenido a los pulques pagaste tu cover c:".concat(usuario).concat("!"));
+        }else{
+            //de lo cotrario se ejecuta este otro bloque
+            //codigo publico le decimos al usuario que requerimos autenticación
+            System.out.println("No pagaste wey x: ");
+        }
+        /*
+        * Entonces a qui podemos tener una app de consoloa o app web
+        * que pida username o password
+        * */
 
     }
 }
