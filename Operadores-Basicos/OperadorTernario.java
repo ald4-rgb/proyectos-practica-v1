@@ -86,7 +86,7 @@ public class OperadorTernario {
         System.out.println("estado = " + estado);*/
 //El ejemplo anterioir esta muy plano podriamos mejorarlo que el promedio sea mucho más dinamico que el usuario pueda ingresar las notas
 //por ejemplo de matematícas de fisica Química etc mediante el terminal la consola
-// pdriamos utilizar la clase Scanner   modificamos el priomedio es decir lo inicializamos
+// podriamos utilizar la clase Scanner   modificamos el priomedio es decir lo inicializamos
 
 
     }
