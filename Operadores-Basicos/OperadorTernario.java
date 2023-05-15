@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class OperadorTernario {
 
     /*
@@ -43,7 +45,27 @@ public class OperadorTernario {
         // por ejemplo un estado --> aprobado o rechazado
         String estado= "";
         //y vamos a tener  un nota del tipo double
-        double promedio = 6.5;
+        double promedio = 0.0;
+
+        //asignamos materias
+        double matematicas = 0.0;
+        double historia =0.0;
+        double fisica =0.0;
+
+        //el prmedio sumado y divido entre 3
+        // hay que tener cuidado va a dividir historia entre 3 segun la presedencia
+        // entonces usamos parentecis
+        //pero tenemos que asignar esos valores la idea es que sea interactivo la idea es que el usuario pueda ingresar esos datos
+        // usando la clase sCanner
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese la calificaón de matematícas entre 2.8 - 7.8:");
+        matematicas = sc.nextDouble();
+        System.out.println("Ingrese la calificaón de historia entre 2.8 - 7.8:");
+        historia = sc.nextDouble();
+        System.out.println("Ingrese la calificaón de fisica entre 2.8 - 7.8:");
+        fisica = sc.nextDouble();
+        promedio = (matematicas + historia +fisica) /3;
+        System.out.println("promedio = " + promedio);
         //entonces deacuerdo al promedio vamos a marcarlo si es aprovado o rechazado
         // si es mayor a 5.5 esta aprobado si es menor esta rechazado
         // entonces estado es del tipo String y evaluamos
@@ -53,13 +75,18 @@ public class OperadorTernario {
         System.out.println("estado = " + estado);
         System.out.println("*********************Con un if es más extenso******************************************");
         //esto  seria equivalente a if() a esta misma condicion si lo hacemos de esta manera
-        if(promedio >= 5.49){
+
+//entonces por lo tanto lo podemos hacer con un ternario es una forma mas simplificada
+/*  //Puedes descomentar estas lineas de codigo para comprobar que hace exactamente lo mismo
+    if(promedio >= 5.49){
             estado="aprobado";
         }else {
             estado="reprobado";
         }
-        System.out.println("estado = " + estado);
-
+        System.out.println("estado = " + estado);*/
+//El ejemplo anterioir esta muy plano podriamos mejorarlo que el promedio sea mucho más dinamico que el usuario pueda ingresar las notas
+//por ejemplo de matematícas de fisica Química etc mediante el terminal la consola
+// pdriamos utilizar la clase Scanner   modificamos el priomedio es decir lo inicializamos
 
 
     }
