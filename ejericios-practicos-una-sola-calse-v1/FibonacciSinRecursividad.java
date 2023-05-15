@@ -1,4 +1,4 @@
-public class cc {
+public class FibonacciSinRecursividad {
 
     public static void main(String[] args) {
 
