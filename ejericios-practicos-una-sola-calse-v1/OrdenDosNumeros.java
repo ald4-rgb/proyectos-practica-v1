@@ -5,7 +5,7 @@
 public class OrdenDosNumeros {
         public static void main(String[] args) {
             int num1= 8;
-            int num2= 2;
+            int num2= 9;
 
             String mayorMenor = (num1>num2)?num1 + " , "+num2:num2 +" & " + num1 ;
             System.out.println("mayorMenor = " + mayorMenor);

@@ -17,14 +17,20 @@ Si está entre 20 y menor a 35: imprimir Suficiente
 Si está entre 1 y menor a 20: imprimir Insuficiente
 * */
 
+import java.util.Scanner;
+
 public class EstanqueGasolina {
     public static void main(String[] args) {
-        double capacidadMaxima = 50;
+        Scanner sc = new Scanner(System.in);
 
-        String tanquisito=  capacidadMaxima == 70?"tanque lleno":(capacidadMaxima >=60 &&
-                            capacidadMaxima <70)?"casi lleno":""  ;
+        System.out.println("Capacidad de su tanque de combustible");
+        double capacidadMaxima = sc.nextDouble();
 
-        System.out.println(tanquisito);
+        String tanquesito=capacidadMaxima==70?"tanque lleno":(capacidadMaxima>=60 && capacidadMaxima<70)?"Estanque casi lleno":(capacidadMaxima>=40 && capacidadMaxima<60)?"Estanque  3/4":
+                (capacidadMaxima>=35 && capacidadMaxima<40)?"Medio Estanque":(capacidadMaxima>=20 && capacidadMaxima<35)?"Suficiente":(capacidadMaxima>=1 && capacidadMaxima<20)?"Insuficiente":"llene tanque";
+        System.out.println(tanquesito);
+
+
 
        /* Una forma con if-else
 
