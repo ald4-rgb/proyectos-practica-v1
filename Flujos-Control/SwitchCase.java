@@ -7,6 +7,8 @@
 *
 * */
 
+import javax.swing.*;
+
 public class SwitchCase {
 
     public static void main(String[] args) {
@@ -26,14 +28,12 @@ public class SwitchCase {
         // un long no lo soporta
         //entonces serian las clases wraper que anidan a los primitivos de referencia
         // y tambiṕen del tipo String
-        int num = 3; // long num = 3; // no sportado //podemos usar //Integer num = 2;  int num = 2; char num =2
+        int num = 1; // long num = 3; // no sportado //podemos usar //Integer num = 2;  int num = 2; char num =2
 
         //switch evalua y va preguntando por ejemplo si es 3 evalua si  0 no ,1 no ,2 no y
         // pude tenr un bloque completo de  lineas de codigo
         //si ponemos mas de n casos encontramos más casos   que se van ir ejecutando si ponemos 1 va ejecutar los demas casos
-        // para evitar este tema usamos la palabra break que nos permite salirno del switch-case para que no continue evaluando el redto
-        // entocnes con braek entonces el brak va hacer el caso uno y no continua ni conel dos y el trer
-        switch (num){
+         switch (num){
             //entonces a qui adentro poremos evalar casos por ejemplo
             case 0 :
                 //ejecutamos algun codigo
@@ -53,26 +53,33 @@ public class SwitchCase {
         }
 /////////////////////////////cuadno usamos un solo brek ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        System.out.println("**************cuadno usamos un solo brek ******************************************************");
+        byte num2 = 1; // long num = 3; // no sportado //podemos usar //Integer num = 2;  int num = 2; char num =2
 
 
-
-
-
-
-///////////////////////////////cuando usamos los mas breaks
-
-
-
-
-//////////////////////Evaliamos con caracter /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        Integer num = 2; // long num = 3; // no sportado //podemos usar //Integer num = 2;  int num = 2; char num =2
-
-
-        switch (num){
+        switch (num2){
             case 0 :
                 System.out.println("El  numero es cero");
             case 1:
+                System.out.println("El  numero es uno");
+                break;
+            case 2:
+                System.out.println("El  numero es dos");
 
+            case 3:
+                System.out.println("El  numero es tres");
+
+        }
+///////////////////////////////cuando usamos  mas breaks///////////////////////////////////////////////////////////////////////////////////////////////////////////
+        System.out.println("**************cuando usamos  mas breaks ******************************************************");
+        Integer num3 = 2; // long num = 3; // no sportado //podemos usar //Integer num = 2;  int num = 2; char num =2
+
+
+        switch (num3){
+            case 0 :
+                System.out.println("El  numero es cero");
+                break;
+            case 1:
                 System.out.println("El  numero es uno");
                 break;
             case 2:
@@ -82,7 +89,53 @@ public class SwitchCase {
                 System.out.println("El  numero es tres");
                 break;
         }
+//////////////////////Cuando usamos  caracter /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        System.out.println("**************Cuando usamos  caracter ******************************************************");
+        char caracter = 'a'; // long num = 3; // no sportado //podemos usar //Integer num = 2;  int num = 2; char num =2
 
+
+        switch (caracter) {
+            case '0':
+                System.out.println("El  numero es cero");
+                break;
+            case '1':
+                System.out.println("El  numero es uno");
+                break;
+            case '2':
+                System.out.println("El  numero es dos");
+                break;
+            case '3':
+                System.out.println("El  numero es tres");
+                break;
+            //y tambien tenemos el default un camino si ninguno coincide va a caer en default por defecto es como el else en if
+            // si no hace match en ningun caso de queda con el default
+            default:
+                System.out.println("no queda ningun caso cae a qui");
+        }
+
+//////////////////////Cuando usamos  String a partir de la version 8 de java /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        System.out.println("**************uando usamos  String a partir de la version 8 de java ******************************************************");
+        String user = "Chubaldo"; // long num = 3; // no sportado //podemos usar //Integer num = 2;  int num = 2; char num =2
+
+
+        switch (user) {
+            case "admin":
+                System.out.println("Hola admin");
+                break;
+            case "Chubaldo":
+                System.out.println("Hola Chubaldo");
+                break;
+            case "Andres":
+                System.out.println("Hola Andres");
+                break;
+            case "Armando":
+                System.out.println("Hola armando");
+                break;
+            //y tambien tenemos el default un camino si ninguno coincide va a caer en default por defecto es como el else en if
+            // si no hace match en ningun caso de queda con el default
+            default:
+                System.out.println("No existe ese usuarios");
+        }
 
     }
 
