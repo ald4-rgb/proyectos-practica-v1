@@ -8,8 +8,10 @@
       <sourceFolder url="file://$MODULE_DIR$/ejericios-practicos-una-sola-calse-v1" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Operadores-Basicos" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Flujos-Control" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ClaseWrapper" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="KotlinJavaRuntime" level="project" />
   </component>
 </module>
