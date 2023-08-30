@@ -18,7 +18,7 @@
 *
 * */
 
-public class PasarPorValor {
+public class PasarPorValorPrimitivos {
 
     public static void main(String[] args) {
         //vamos a tener una vairable del tipo integer primitica
