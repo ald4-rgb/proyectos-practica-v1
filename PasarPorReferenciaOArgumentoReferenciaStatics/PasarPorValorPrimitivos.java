@@ -4,7 +4,7 @@
 * Pasar por valor:
 *
 *   En nuestro caso el método main
-*   y vamos atener otro metodo por ejemplo test
+*   y vamos a tener otro metodo por ejemplo test
 *   y el método test va amodificar el valor de esta vairable
 *   al modificar el valor en test como se pasa por valor en test
 *   no deberia afectar  ni cambiar el valor que tenia en el método
