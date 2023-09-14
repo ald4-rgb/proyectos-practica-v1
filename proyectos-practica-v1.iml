@@ -9,6 +9,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Operadores-Basicos" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Flujos-Control" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ClaseWrapper" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/EjemploClaseInmutable" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PasarPorReferenciaOArgumentoReferenciaStatics" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

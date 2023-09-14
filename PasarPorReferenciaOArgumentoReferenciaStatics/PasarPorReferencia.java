@@ -31,10 +31,15 @@ public class PasarPorReferencia {
             System.out.println("edad[i] = " + edad[i]);
         }
         //antes de llamar al método test
-        System.out.println("Antes de llamar  al método test");
+        System.out.println("*************************************"+"Antes de llamar  al método test");
         //pasamos edad al método test
         test(edad);
         //ahora vamos a voler a recorrer con for deberian ya haber cambiado los datos
+        //significa que estamos pasando por referencia apunta al mismo puntero en la memoria
+        // es el mismo objeto
+        // diferencia del primitico se pasa por referencia y no por valor
+        //entonces para resumir este segunod for imprimme los valores del arreglo modificados
+        // por ser de referencia mantiene el cambio para ser modificado en el método test
         for (int i = 0; i < edad.length;i++){
             System.out.println("edad[i] = " + edad[i]);
         }
