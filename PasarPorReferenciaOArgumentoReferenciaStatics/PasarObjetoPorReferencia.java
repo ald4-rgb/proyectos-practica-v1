@@ -67,8 +67,6 @@ public class PasarObjetoPorReferencia {
         System.out.println("Nuevo cambio de nombre : "+persona.leerNombre());
        //modificado
 
-
-
     }
 
    public static  void  test(Persona persona){
