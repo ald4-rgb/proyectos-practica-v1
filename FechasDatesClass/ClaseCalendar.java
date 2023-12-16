@@ -4,6 +4,7 @@
 * */
 
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -25,14 +26,35 @@ public class ClaseCalendar {
         calendario.set(2023,Calendar.DECEMBER,13,6,20,25); //--> podemos colocar el número a secas de forma estatica Calendar.
 
 
+
         //antes de imprmiri en consola hay que mostrar el formato de fecha que queremos
         Date fecha = calendario.getTime();
 
+
         System.out.println("calendario = " + fecha +"\n*******************otra forma***********************");
 
+        calendario.set(2023,Calendar.YEAR,2023);
+        calendario.set(2023,Calendar.MONTH,Calendar.DECEMBER);
+        calendario.set(2023,Calendar.DAY_OF_MONTH,13);
+        calendario.set(2023,Calendar.MINUTE,16);
+
+        //////////////////munituso tiempo estatico inmutable
+        calendario.set(2023,Calendar.HOUR,6);
+        calendario.set(2023,Calendar.AM_PM,Calendar.PM);
+        calendario.set(2023,Calendar.MINUTE,20);
+        calendario.set(2023,Calendar.SECOND,45);
+        calendario.set(2023,Calendar.MILLISECOND,45);
 
 
+        System.out.println("sin formato usando la froma static ---> " + fecha+"\n********************************************************************");
 
+        //vamos a darle un formato personalizado y damos el formato de para la fehca yyyy-MM-dd yyyy-MM-dd HH:mm:ss:SS
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss:SS");
 
+        //fecha con fromato formatoFechaCustom  pasamos el objeto Date de Java Util
+     String formatoFechaCustom =    simpleDateFormat.format(fecha);
+
+     System.out.println("Con otro formato de froma perzonalizada  ---> " + formatoFechaCustom);
+        
     }
 }
