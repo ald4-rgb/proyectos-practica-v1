@@ -7,8 +7,15 @@
       <sourceFolder url="file://$MODULE_DIR$/converciones-tipos-datos-primitivos-v1" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ejericios-practicos-una-sola-calse-v1" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Operadores-Basicos" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Flujos-Control" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ClaseWrapper" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/EjemploClaseInmutable" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PasarPorReferenciaOArgumentoReferenciaStatics" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FechasDatesClass" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/VariablesDeEntorno" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="KotlinJavaRuntime" level="project" />
   </component>
 </module>
