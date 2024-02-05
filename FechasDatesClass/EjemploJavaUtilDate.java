@@ -11,7 +11,7 @@ public class EjemploJavaUtilDate {
     public static void main(String[] args) {
         //vamos a crar una instnacia de la clase date
         Date fecha = new Date();
-
+        Date fecha2 = new Date("yyyMMdd");
         //si quiero pintar la fecha actual simplemente fecha imprmimos el objeto
         //imprmimos l dia la hora minuto segudos y año
         System.out.println("fecha = " + fecha);

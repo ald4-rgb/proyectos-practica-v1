@@ -12,6 +12,7 @@
       <sourceFolder url="file://$MODULE_DIR$/EjemploClaseInmutable" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PasarPorReferenciaOArgumentoReferenciaStatics" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/FechasDatesClass" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/VariablesDeEntorno" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
