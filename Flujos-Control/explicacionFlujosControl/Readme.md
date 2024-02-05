@@ -69,7 +69,7 @@
       - Setentecia **while**
          Ejecuta un bloque de código mientras se cumpla la condición 
 
-![img_3.png](img_3.png)
+
 
 # Sentencia while
 
@@ -90,7 +90,7 @@ while(expresion){
       Similar al while, excepto en que la expresión se evalua al final del bucl, se 
       ejecuta almenos una ez
 
-![img_4.png](img_4.png)
+
 
 ```java
    
@@ -101,7 +101,7 @@ do{
 
       - Setencia for
       La setencia for se utiliza cuando se conocen los límimites del bucle
-![img_5.png](img_5.png)
+
 
       - la setencia for se utiliza cuando se coonocen los límites de bucle
          (inicialización, su condición de término y su instrucción de incremento/decremento)
