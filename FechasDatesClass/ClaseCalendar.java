@@ -52,9 +52,25 @@ public class ClaseCalendar {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss:SS");
 
         //fecha con fromato formatoFechaCustom  pasamos el objeto Date de Java Util
-     String formatoFechaCustom =    simpleDateFormat.format(fecha);
+        String formatoFechaCustom =    simpleDateFormat.format(fecha);
 
      System.out.println("Con otro formato de froma perzonalizada  ---> " + formatoFechaCustom);
-        
+
+        System.out.println("**************** comparación **********************");
+     //vamos hacer la comparación con calendar
+
+        Calendar calendarioActual = Calendar.getInstance();
+        Date fecha2 = calendarioActual.getTime();
+
+        System.out.println("********otra manera de hacerlo manera 2 *******************");
+        if(fecha.compareTo(fecha2) > 0) {
+            System.out.println("Fecha1 del usuario es superoir que fecha2 actual");
+            //si el valor es negativo es un entero negativo entonces fecha es anterior que fecha2
+        } else if (fecha.compareTo(fecha2) < 0 ) {
+            System.out.println("fecha 1 es anteroir que fecha 2 ");
+            //si es igual a cero
+        }else if (fecha.compareTo(fecha2) == 0 ){
+            System.out.println("ambas fechas son iguales");
+        }
     }
 }
