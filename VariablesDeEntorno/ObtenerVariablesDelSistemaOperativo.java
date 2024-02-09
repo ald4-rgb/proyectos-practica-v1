@@ -51,8 +51,29 @@ public class ObtenerVariablesDelSistemaOperativo {
         //entonces valEnv --> el objeto del Map<k,j>
         //valEnv.get("...") --> el método get del mapa pasamos el nombre o la llave con la cual guardamos o se
         //guarda esta varaible de entonrnno en el diccionario
-        String path2 = valEnv.get("PATH");
+        String path2 = valEnv.get("Path");
         System.out.println("PATH2 = " + path2);
+
+//el problema es que no se va a mostrar hay que reniciar el id este solo funciona con windows
+        String appEnv = valEnv.get("APPLICATION_ENV");
+        System.out.println("appEnv = " + appEnv);
+//esta solo esta creada en widnows no olvidar reiniciar el ide
+        String saludar = valEnv.get("SALUDAR_HOLA");
+        System.out.println("SALUDAR_HOLA = " + saludar);
+
+//si quiero iterar el mapa por ejemplo con un for si quiero iterar este diccionario asociativo uno por uno
+//podemos usar un foreach
+
+        System.out.println("----- listar Iteración mapa de varaibles de entorno -------------------");
+//keySet() --> retorna un conjunto un set con los nombres de llaves
+
+        for (String key: valEnv.keySet()) {
+            //por cada nombre voy a pintar  su valor la varaible valEnv
+            //recordemos que la varaivle de ambiente se obtiene por su valor valEnv.get();
+            //valEnv.get(key) entonces por cada nombre de llave o key leemos y retornamos el valor
+            //con el metodo get entonces mostramos la llave con su valor
+            System.out.println(key +" =>"+valEnv.get(key));
+        }
 
 
 
