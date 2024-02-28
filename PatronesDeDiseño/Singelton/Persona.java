@@ -1,2 +1,4 @@
-package Singelton;public class Persona {
+package Singelton;
+
+public class Persona {
 }

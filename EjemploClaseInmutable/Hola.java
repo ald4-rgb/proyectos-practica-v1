@@ -1,6 +1,6 @@
 /*
 *
-* MI miniejemplo de clase imnutable que no entendia
+* Mini ejemplo de clase imnutable que no entendia
 *
 * para hacer una clase imnutable ¿Que necesitamos son tres requisitos?
 *
@@ -24,8 +24,7 @@ public  final class Hola {
     private final String saludar;
     
     private final String despedirse;
-    
-    
+
     private  Hola(String saludar,String despedirse){
         this.saludar = saludar; 
         this.despedirse = despedirse; 
