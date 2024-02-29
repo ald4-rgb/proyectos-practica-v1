@@ -24,12 +24,19 @@ public class ArgumnetoLineaComandoCalculadora {
         String operacion = args[0];
         //la idea es sumar restar dos números a + b;
         //recordando la transformacion de String a tipo Integer usamos el método
-        int a = Integer.parseInt(args[1]);
-        int b = Integer.parseInt(args[2]);
+        int a = 0;
+        int b = 0;
         //ahora el resultado
         //0.00 por defecto
         double resultado = 0.00;
 
+        try {
+            a = Integer.parseInt(args[1]);
+            b = Integer.parseInt(args[2]);
+        }catch (NumberFormatException e) {
+            System.err.println("Por favor a y b  deben ser entero y solo los parametros permitidos son suma,resta,multipliacion,divicion c: ****");
+            System.exit(-1);
+        }
         //bie ahora vamos a implementar esta calculadora segun la operacion para eso podriamos implementar un switch cas o un if
         //usamos operacion
         switch (operacion){
