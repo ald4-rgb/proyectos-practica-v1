@@ -28,3 +28,9 @@
     Salida de consola en el Ide
 
 ![img_6.png](img_6.png)
+
+    Se agraga try Catch pera el control de ejecuciones
+
+![img_9.png](img_9.png)
+
+![img_10.png](img_10.png)
