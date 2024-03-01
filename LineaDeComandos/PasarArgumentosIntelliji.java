@@ -20,9 +20,17 @@ public class PasarArgumentosIntelliji {
         String operacion = args[0];
 
 
-        int a = Integer.parseInt(args[1]);
-        int b = Integer.parseInt(args[2]);
+        int a = 0;
+        int b = 0;
 
+
+        try {
+            a = Integer.parseInt(args[1]);
+            b = Integer.parseInt(args[2]);
+        }catch (Exception e){
+            System.err.println("Solo se permiten los comadnos suma resta multiplicacion y divicion no caracteres * ´{´+´+{ñ etc");
+            System.exit(-1);
+        }
 
         double resultado = 0.00;
 
