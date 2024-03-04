@@ -97,7 +97,7 @@ public static void main(String[] args) {
 
     System.out.println("*********************mostrando un play list de mis caciones en un arreglo*********************+");
 
-//u nuesvo array con mi playlist de canciones
+//un nuevo array con mi playlist de canciones
     String [] canciones = {"Nirvana - The Man Who Sold The World","Coldplay - The Scientist ","ZZ Top - La Grange","The Hollies - Long Cool Woman ",
             "The Doors  Break on Through","Santana - Oye Como Va","Hurricane Jane","Greenback Boogie","Don't Dream It's Over","The Final Countdown"};
 
