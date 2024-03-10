@@ -15,7 +15,7 @@ public class IterarArregloOrdenInverso {
         "Xaomi phone",};
 
    /*
-        //Esta froam es mas dinamica puedes descomenta
+        //Esta forma es mas dinamica puedes descomenta
 
         String []productos  = new String[7];
 
