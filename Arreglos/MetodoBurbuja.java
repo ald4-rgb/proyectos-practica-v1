@@ -68,11 +68,10 @@ public class MetodoBurbuja {
 
 //otro pero más obtimizado
     public  static void burbuja(Integer [] orden){
-            Integer numerosInt = orden.length;
+           Integer numerosInt = orden.length;
            int iteraciones=0;
-           
             for (int i = 0;i<numerosInt ; i++){
-                //para que no se nos desbo
+                //para que no se nos desborde la memoria comparamos i con j
                 for (int j = i;j<numerosInt ; j++){
                     if(orden[j] < orden[i]){
                         Integer ordenTemp = orden[j];
@@ -118,7 +117,7 @@ public class MetodoBurbuja {
         for (Integer pintarNum:numerosDesorden){
             System.out.println("pintarNum = " + pintarNum);
         }
-        System.out.println("************************* ahora de manera mas estatica");
+        System.out.println("************************* ahora de manera mas estatica uso ded comparación j = i con metodo burbuja");
 
         Integer [] numerosDesastroso = {11,8,2,3,22,44,90,01,223,545,12,45,55,77,77};
         //ussamos otra sobreescritura de metodos del metodo burbuja
