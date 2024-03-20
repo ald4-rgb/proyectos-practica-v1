@@ -25,20 +25,24 @@ public class MetodoBurbuja {
 
             //iteracion nuestro array
             //contador de cuantas veces iteramos
-            int iteracion;
+            //recrodemos que hay que inicializarlo
+            int iteracion=0;
             
             for(int i= 0;i< datos;i++){
                 //importanten realizar la operación para desbordar la memoria es datos menos iteracion meno 1
-                for(int j= 0; j <datos - i -1;i++){
+                for(int j= 0; j <datos - i -1;j++){
                     //realizamo el ordenamiento comparamos si orden[j + 1]  con orden[j] menor que cero
                     if(orden[j+1].compareTo(orden[j]) <0){
-                        
+                        String temp= orden[j];
+                        orden[j] = orden[j+1];
+                        orden[j+1] = temp;
                     }
 
                 }
+                iteracion++;
             }
 
-
+            System.out.println("Numero de iteraciones"+iteracion);
     }
 
 
@@ -46,9 +50,16 @@ public class MetodoBurbuja {
         String [] canciones = {"Nirvana - The Man Who Sold The World","Coldplay - The Scientist ","ZZ Top - La Grange","The Hollies - Long Cool Woman ",
                 "The Doors  Break on Through","Santana - Oye Como Va","Hurricane Jane","Greenback Boogie","Don't Dream It's Over","The Final Countdown"};
 
+    System.out.println("\n*******en desorden la lista de canciones******");
+        //ordenamos 
+        for(String desorden:canciones){
+            System.out.print(desorden);
+        }
+        System.out.println("\n********en orden la lista de canciones******");
 
-
-
-
+        burbuja(canciones);
+        for(String orden:canciones){
+            System.out.print(orden);
+        }
     }
 }
